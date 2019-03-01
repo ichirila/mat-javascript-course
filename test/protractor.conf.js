@@ -1,6 +1,6 @@
 exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
-    baseUrl: 'http://localhost:8080/',
+    baseUrl: 'http://localhost:8888/',
     framework: 'custom',
     frameworkPath: require.resolve('protractor-cucumber-framework'),
     plugins: [{
@@ -21,5 +21,11 @@ exports.config = {
         //format: 'json:results.json',
         profile: false,
         'no-source': true
-        }    
+        },   
+    capabilities: {
+        browserName: 'chrome',
+        chromeOptions: {
+        args: [ "--headless", "--disable-gpu", "--window-size=800,600" ]
+        }
+    },
 };

@@ -1,0 +1,102 @@
+[
+  {
+    "description": "  Rules:\n  1. You must be able to add a product",
+    "keyword": "Feature",
+    "name": "Product Management",
+    "line": 1,
+    "id": "product-management",
+    "tags": [],
+    "uri": "test/features/product.feature",
+    "elements": [
+      {
+        "id": "product-management;a-product-is-added",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "A product is added",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test/features/step_definitions/product.steps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "description",
+                      "price"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "carrots",
+                      "orange vegetables",
+                      "10"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "a product doesn't exist",
+            "match": {
+              "location": "test/features/step_definitions/product.steps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I add the product",
+            "match": {
+              "location": "test/features/step_definitions/product.steps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3644000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the product is created",
+            "match": {
+              "location": "test/features/step_definitions/product.steps.js:38"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
