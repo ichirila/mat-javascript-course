@@ -4,7 +4,7 @@
   "description": "Safebear Test Automation Framework",
   "main": "index.js",
   "scripts": {
-    "test": "protractor ./test/protractor.conf.js"
+    "test": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -20,10 +20,13 @@
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "cucumber": "^5.1.0",
+    "cypress": "^3.1.5",
     "eslint": "^5.14.1",
     "eslint-plugin-cucumber": "^1.2.0",
     "eslint-plugin-protractor": "^1.41.1",
     "jsdoc": "^3.5.5",
+    "mocha": "^5.2.0",
+    "mochawesome": "^3.1.1",
     "protractor": "^5.4.2",
     "protractor-cucumber-framework": "^6.1.1",
     "protractor-multiple-cucumber-html-reporter-plugin": "^1.8.0"

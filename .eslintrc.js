@@ -8,7 +8,7 @@ module.exports = {
         "eslint:recommended",
         "plugin:protractor/recommended",
         "plugin:cucumber"
-        ],
+    ],
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
