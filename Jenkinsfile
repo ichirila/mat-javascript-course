@@ -4,12 +4,12 @@ pipeline {
   stages {
   stage('Install Dependencies') {
   steps {
-  bat "npm install"
+  sh "npm install"
   }
   }
   stage('Start Selenium Server and Run Acceptance Tests') {
   steps {
-  bat "START /B npx webdriver-manager start && npm test"
+  sh "START /B npx webdriver-manager start && npm test"
   }
   post {
   always {
