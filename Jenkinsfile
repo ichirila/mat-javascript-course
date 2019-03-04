@@ -7,9 +7,9 @@ pipeline {
   bat "npm install"
   }
   }
-  stage('Run Acceptance Tests') {
+  stage('Start Selenium Server and Run Acceptance Tests') {
   steps {
-  bat "npm test"
+  bat "START /B npx webdriver-manager start && npm test"
   }
   post {
   always {
