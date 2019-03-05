@@ -9,7 +9,7 @@ pipeline {
   }
   stage('Start Selenium Server and Run Acceptance Tests') {
   steps {
-  sh "START /B npx webdriver-manager start && npm test"
+  sh "npx webdriver-manager start && npm test"
   }
   post {
   always {
