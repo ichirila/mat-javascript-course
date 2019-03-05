@@ -62,3 +62,6 @@ typings/
 
 #mochawesome reports
 mochawesome-report/
+
+# JSDoc report
+out/
