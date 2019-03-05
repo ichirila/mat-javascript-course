@@ -1,5 +1,5 @@
 /**
- * Page object for any actions on the page.
+ * Page object(better called modules in js) for any actions on the page.
  * @constructor
  */
 var Actions = function () {

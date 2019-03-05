@@ -4,12 +4,12 @@ pipeline {
   stages {
   stage('Install Dependencies') {
   steps {
-  sh "npm install"
+  sh "/home/student/.nvm/versions/node/v11.9.0/bin/npm install"
   }
   }
   stage('Start Selenium Server and Run Acceptance Tests') {
   steps {
-  sh "npx webdriver-manager start && npm test"
+  sh "START /B /home/student/.nvm/versions/node/v11.9.0/bin/npx webdriver-manager start && /home/student/.nvm/versions/node/v11.9.0/bin/npm test"
   }
   post {
   always {
